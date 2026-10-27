@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5eddb;
+}
+
+.carrinho-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    padding: 22px 7% 70px;
+    background:
+        linear-gradient(
+            145deg,
+            #b9e3fa 0%,
+            #a5d3e9 28%,
+            #7893a2 57%,
+            #242a2d 100%
+        );
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-top: 0;
+    margin-top: 150px;
+}
+
+
+.produto {
+    width: 100%;
+    min-height: 98px;
+    display: grid;
+    grid-template-columns: 65px 1fr 90px;
+    align-items: center;
+    gap: 12px;
+    padding: 7px 16px;
+    background: #ffffff;
+    border-radius: 9px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03);
+}
+
+.produto-imagem {
+    width: 60px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-imagem img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.produto-info {
+    align-self: center;
+}
+
+.produto-info h2 {
+    font-size: 15px;
+    line-height: 1.25;
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 7px;
+}
+
+.preco {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+}
+
+.produto-controle {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantidade {
+    width: 65px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #b5e1fa;
+    border-radius: 8px;
+    color: #111;
+    font-size: 15px;
+}
+
+.quantidade button {
+    border: none;
+    background: transparent;
+    font-size: 17px;
+    cursor: pointer;
+    color: #111;
+    line-height: 1;
+}
+
+.quantidade span {
+    font-size: 14px;
+}
+
+.remover {
+    margin-top: 3px;
+    border: none;
+    background: transparent;
+    color: #00529b;
+    font-size: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkout {
+    padding-top: 8px;
+    margin-top: 150px;
+}
+
+.checkout h1 {
+    margin-bottom: 10px;
+    color: #00519b;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.checkout h1 span {
+    color: #63879c;
+}
+
+.checkout form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.checkout input,
+.checkout select {
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 0 10px;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.checkout input::placeholder {
+    color: #111;
+    opacity: 1;
+}
+
+.checkout input[type="email"] {
+    width: 88%;
+    margin-bottom: 8px;
+}
+
+.checkout input[type="password"] {
+    width: 67%;
+    margin-bottom: 7px;
+}
+
+.documentos {
+    width: 67%;
+    display: grid;
+    grid-template-columns: 63px 1fr;
+    gap: 18px;
+}
+
+.documentos select {
+    width: 100%;
+}
+
+.documentos input {
+    width: 100%;
+}
+
+.checkout small {
+    margin-top: 1px;
+    margin-left: 2px;
+    font-size: 8px;
+    color: #111;
+}
+
+.pagamento {
+    width: 83%;
+    height: 32px;
+    margin-top: 19px;
+    border: none;
+    border-radius: 6px;
+    background: #0055a6;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.finalizar {
+    width: 83%;
+    height: 52px;
+    margin-top: 9px;
+    border: none;
+    border-radius: 6px;
+    background: #b5e1fa;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.quantidade button:hover {
+    color: #0055a6;
+}
+
+.remover:hover {
+    color: #003b70;
+}
+
+.pagamento:hover {
+    background: #004487;
+}
+
+.finalizar:hover {
+    background: #9fd4f2;
+}
+
+footer{
+    background: #181818;
+    padding: 60px 10%;
+    margin-top: 80px;
+    color: white;
+    border-top: 2px solid #BEE6FF;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-section{
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #BEE6FF;
+}
+
+.footer-section p{
+    line-height: 1.8;
+    color: #d6d6d6;
+    margin-bottom: 10px;
+}
+
+.footer-section ul{
+    list-style: none;
+}
+
+.footer-section ul li{
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.footer-section ul li a:hover{
+    color: #BEE6FF;
+    padding-left: 5px;
+}
+
+.pagamento-icon{
+    width: 330px;
+    margin-top: 15px;
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+footer::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #333;
+    margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+
+    .carrinho-page {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 25px 20px 50px;
+    }
+
+    .checkout {
+        padding-top: 0;
+    }
+    .checkout h1 {
+        font-size: 30px;
+    }
+
+    .checkout input[type="email"],
+    .checkout input[type="password"],
+    .documentos,
+    .pagamento,
+    .finalizar {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .produto {
+        grid-template-columns: 55px 1fr 75px;
+
+        padding: 8px;
+
+        gap: 7px;
+    }
+
+    .produto-imagem {
+        width: 50px;
+        height: 70px;
+    }
+
+    .produto-info h2 {
+        font-size: 13px;
+    }
+
+    .preco {
+        font-size: 14px;
+    }
+
+    .produto-controle {
+        transform: scale(0.9);
+    }
+}
